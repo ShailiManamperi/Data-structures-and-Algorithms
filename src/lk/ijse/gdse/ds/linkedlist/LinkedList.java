@@ -102,7 +102,7 @@ public class LinkedList {
             return;
         }
         if (position == 0) {
-            head = head.next; // Update head to skip the first node
+            deleteAtBegin();
             return;
         }
 
@@ -121,5 +121,15 @@ public class LinkedList {
 
         next.next = temp.next;
 
+    }
+
+    public int size(){
+        int count = 0;
+        Node temp = head;
+        while (temp !=null){
+            count++;
+            temp= temp.next;
+        }
+        return count;
     }
 }

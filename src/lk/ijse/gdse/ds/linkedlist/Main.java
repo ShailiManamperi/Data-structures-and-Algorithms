@@ -28,6 +28,9 @@ public class Main {
         ll.deleteByPostion(2);
         ll.printList();
 
+        int size = ll.size();
+        System.out.println(size);
+
 
     }
 }
