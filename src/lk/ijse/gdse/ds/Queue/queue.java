@@ -10,13 +10,23 @@ public class queue {
     }
 
     public void enQueue(int data){
+        if (isFull()){
+            System.out.println("After stack full");
+            grow();
+        }
         if (froent == -1){
             froent = 0;
         }
         elemenetdata[++rear] = data;
     }
 
+
+
     public int deQueue(){
+        if (isEmpty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
         return elemenetdata[froent++];
     }
 
@@ -36,7 +46,22 @@ public class queue {
         System.out.println("\b\b]");
     }
 
+   public boolean isFull(){
+        return rear == elemenetdata.length-1;
+   }
 
+   public boolean isEmpty(){
+        return froent == -1;
+   }
+
+    private void grow() {
+        int[] temp = elemenetdata;   //length -> 5
+
+        elemenetdata = new int[elemenetdata.length * 2];  //length -> 10
+        for (int i = 0; i < temp.length; i++) {
+            elemenetdata[i] = temp[i];
+        }
+    }
 
 
 
