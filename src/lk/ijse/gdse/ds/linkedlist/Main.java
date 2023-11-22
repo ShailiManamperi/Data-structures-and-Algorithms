@@ -19,6 +19,9 @@ public class Main {
         ll.insertAtPosition(70,0);
         ll.printList(); //[ 70 , 30 , 20 , 60 , 10 , 50 ]
 
+        ll.deleteAtBegin();
+        ll.printList();
+
 
     }
 }
