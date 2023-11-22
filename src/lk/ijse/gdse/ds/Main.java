@@ -18,8 +18,14 @@ public class Main {
         System.out.println(stack.peek());
 
         int pop = stack.pop();
-        System.out.println("return value"+pop);
+        System.out.println("return value "+pop);
 
-        System.out.println("return value"+stack.pop());
+        System.out.println("return value "+stack.pop());
+
+        stack.printstack();
+
+        stack.push(400);// replace the 400 for the 40 . because still that 3 elememt has 40 value it get replace by 400.
+        stack.printstack();
+
     }
 }

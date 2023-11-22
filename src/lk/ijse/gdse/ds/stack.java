@@ -21,6 +21,14 @@ public class stack {
         return elementData[top--]; // frist return the value and point the top for next element
     }
 
+    public void printstack(){
+        System.out.print("[ ");
+        for (int i = 0; i<=top; i++){
+            System.out.print(elementData[i]+" , ");
+        }
+        System.out.print("\b\b]\n");
+    }
+
 
 
 
