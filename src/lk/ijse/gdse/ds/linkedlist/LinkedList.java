@@ -10,4 +10,12 @@ public class LinkedList {
         }
     }
     private Node head;
+
+    public void insertAtBegining(int data){
+        Node node = new Node(data);
+        node.next = head;
+        head = node;
+    }
+
+
 }
