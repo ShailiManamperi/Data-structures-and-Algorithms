@@ -15,7 +15,8 @@ public class stack {
 //            return;
 //        }
         if (isFull()){
-            System.out.println("Stack is full");
+            System.out.println("After stack full");
+            grow();
         }
         elementData[++top] =data;  // frist increment and add the value for the element
     }
@@ -25,11 +26,20 @@ public class stack {
     }
 
     public int pop(){   // remove the top value and return that value
+        if (isEmpty()) {
+//            throw new RuntimeException("Stack is empty");
+            System.out.println("Stack is empty");
+            return -1;
+        }
         return elementData[top--]; // frist return the value and point the top for next element
     }
 
     public void printstack(){
         System.out.print("[ ");
+        if (top == -1){
+            System.out.println("]");
+            return;
+        }
         for (int i = 0; i<=top; i++){
             System.out.print(elementData[i]+" , ");
         }
@@ -38,6 +48,17 @@ public class stack {
 
     public boolean isFull(){
         return top == elementData.length-1;
+    }
+    public boolean isEmpty(){
+        return top == -1;
+    }
+    public void grow(){
+        int[] temp = elementData;   //length -> 5
+
+        elementData = new int[elementData.length * 2];  //length -> 10
+        for (int i = 0; i < temp.length; i++) {
+            elementData[i] = temp[i];
+        }
     }
 
 

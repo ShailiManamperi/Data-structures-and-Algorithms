@@ -34,7 +34,26 @@ public class Main {
 
         stack.push(500);
         stack.printstack(); //[ 10 , 20 , 30 , 400 , 500 ]
+
+        // when stack is full when extend the stack.
         stack.push(60);  // Stack is full
+        stack.printstack(); // After stack full \n  [ 10 , 20 , 30 , 400 , 500 , 60 ]
+        stack.push(700);
+        stack.printstack(); //[ 10 , 20 , 30 , 400 , 500 , 60 , 700 ]
+
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+
+        stack.printstack(); //[ ]
+
+        //when stack is empty
+        stack.pop(); //Stack is empty
+
 
 
     }
