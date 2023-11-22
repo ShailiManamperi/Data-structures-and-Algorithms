@@ -21,5 +21,15 @@ public class Main {
         q1.printQueue();
 
         System.out.println(q1.peek());
+
+        System.out.println(q1.size());
+
+        q1.deQueue();
+        System.out.println(q1.size());
+        q1.deQueue();
+        System.out.println(q1.size());
+        q1.deQueue();
+        System.out.println(q1.size());
+
     }
 }

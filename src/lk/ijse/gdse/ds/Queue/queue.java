@@ -63,6 +63,10 @@ public class queue {
         }
     }
 
+    public int size(){
+        return rear - froent +1;
+    }
+
 
 
 }
