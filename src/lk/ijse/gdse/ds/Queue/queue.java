@@ -9,7 +9,12 @@ public class queue {
         elemenetdata = new int[capacity];
     }
 
-
+    public void enQueue(int data){
+        if (froent == -1){
+            froent = 0;
+        }
+        elemenetdata[++rear] = data;
+    }
 
 
 
