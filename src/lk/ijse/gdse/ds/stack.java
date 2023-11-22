@@ -9,6 +9,10 @@ public class stack {
         top =-1;
     }
 
+    public static void push(int data){
+        elementData[++top] =data;
+    }
+
 
 
 
