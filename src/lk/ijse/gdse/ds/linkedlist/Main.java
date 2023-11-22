@@ -22,6 +22,9 @@ public class Main {
         ll.deleteAtBegin();
         ll.printList();
 
+        ll.deleteAtEnd();
+        ll.printList();
+
 
     }
 }
