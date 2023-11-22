@@ -49,4 +49,28 @@ public class LinkedList {
 
 //        System.out.println("\b\b]");
     }
+
+    public void insertAtPosition(int data,int position){
+        if (position == 0){
+            insertAtBegining(data);
+        }else {
+            Node node = new Node(data);
+            Node temp = head;
+
+            // Traverse to the node at position - 1
+            for (int i = 0; i < position - 1 ; i++) {
+                temp = temp.next;
+            }
+
+            // Check if the position is valid
+//            if (temp == null) {
+//                System.out.println("Invalid position");
+//                return;
+//            }
+
+            // Insert the new node after the temp node
+            node.next = temp.next;
+            temp.next = node;
+        }
+    }
 }
