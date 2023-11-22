@@ -17,7 +17,14 @@ public class LinkedList {
         head = node;
     }
 
-
+    public void insertAtEnd(int data){
+        Node node = new Node(data);
+        Node temp = head;
+        while (temp.next !=null){
+            temp = temp.next;
+        }
+        temp.next = node;
+    }
 
     public void printList(){
         System.out.print("[ ");
@@ -29,7 +36,17 @@ public class LinkedList {
         do{
             System.out.print(temp.data+" , ");
             temp = temp.next;
-        }while (temp.next != null);
+        }while (temp != null);
         System.out.println("\b\b]");
+
+//        Node temp = head;
+//
+//        System.out.print("[");
+//        while(temp != null) {
+//            System.out.print(temp.data + ", ");
+//            temp = temp.next;
+//        }
+
+//        System.out.println("\b\b]");
     }
 }

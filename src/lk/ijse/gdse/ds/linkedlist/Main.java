@@ -10,6 +10,9 @@ public class Main {
         ll.insertAtBegining(30);
         ll.printList();
 
+        ll.insertAtEnd(50);
+        ll.printList();
+
 
     }
 }
