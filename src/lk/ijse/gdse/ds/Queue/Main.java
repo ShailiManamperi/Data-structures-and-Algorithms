@@ -8,5 +8,9 @@ public class Main {
         q1.enQueue(20);
 
         q1.printQueue();
+
+        q1.deQueue();
+
+        q1.printQueue();
     }
 }

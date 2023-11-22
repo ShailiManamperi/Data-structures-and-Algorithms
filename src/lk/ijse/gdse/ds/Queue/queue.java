@@ -16,6 +16,10 @@ public class queue {
         elemenetdata[++rear] = data;
     }
 
+    public int deQueue(){
+        return elemenetdata[froent++];
+    }
+
     public void printQueue(){
         System.out.print("[ ");
         if (froent==-1){
@@ -27,6 +31,8 @@ public class queue {
         }
         System.out.println("\b\b]");
     }
+
+
 
 
 
