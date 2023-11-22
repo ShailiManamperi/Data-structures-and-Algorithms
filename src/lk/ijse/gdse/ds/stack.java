@@ -9,12 +9,16 @@ public class stack {
         top =-1;
     }
 
-    public  void push(int data){
-        elementData[++top] =data;
+    public  void push(int data){ //add value to the stack
+        elementData[++top] =data;  // frist increment and add the value for the element
     }
 
-    public int peek(){
+    public int peek(){   //return the top value
         return elementData[top];
+    }
+
+    public int pop(){   // remove the top value and return that value
+        return elementData[top--]; // frist return the value and point the top for next element
     }
 
 

@@ -16,5 +16,10 @@ public class Main {
 
         stack.push(50);
         System.out.println(stack.peek());
+
+        int pop = stack.pop();
+        System.out.println("return value"+pop);
+
+        System.out.println("return value"+stack.pop());
     }
 }
