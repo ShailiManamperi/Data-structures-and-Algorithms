@@ -132,4 +132,16 @@ public class LinkedList {
         }
         return count;
     }
+
+    public int get(int postion){
+        if (head==null){
+            System.out.println("List is empty");
+            return -1;
+        }
+        Node temp = head;
+        for (int i=0; i<postion; i++){
+            temp = temp.next;
+        }
+        return temp.data;
+    }
 }

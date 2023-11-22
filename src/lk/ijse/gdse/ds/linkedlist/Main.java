@@ -31,6 +31,7 @@ public class Main {
         int size = ll.size();
         System.out.println(size);
 
+        System.out.println(ll.get(2));
 
     }
 }
