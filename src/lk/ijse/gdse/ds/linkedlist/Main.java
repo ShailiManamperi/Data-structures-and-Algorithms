@@ -25,6 +25,9 @@ public class Main {
         ll.deleteAtEnd();
         ll.printList();
 
+        ll.deleteByPostion(2);
+        ll.printList();
+
 
     }
 }

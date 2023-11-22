@@ -95,4 +95,31 @@ public class LinkedList {
         }
         temp.next =null;
     }
+
+    public void deleteByPostion(int position){
+        if (head == null){
+            System.out.println("Linked List is empty");
+            return;
+        }
+        if (position == 0) {
+            head = head.next; // Update head to skip the first node
+            return;
+        }
+
+        Node temp = head;
+        Node next = null;
+
+        for (int i = 0; i < position; i++) {
+            next = temp;
+            temp = temp.next;
+        }
+
+        if (temp == null) {
+            System.out.println("Invalid position");
+            return;
+        }
+
+        next.next = temp.next;
+
+    }
 }
