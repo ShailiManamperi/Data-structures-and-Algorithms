@@ -20,6 +20,10 @@ public class queue {
         return elemenetdata[froent++];
     }
 
+    public int peek(){
+        return elemenetdata[froent];
+    }
+
     public void printQueue(){
         System.out.print("[ ");
         if (froent==-1){

@@ -12,5 +12,14 @@ public class Main {
         q1.deQueue();
 
         q1.printQueue();
+
+        q1.enQueue(30);
+        q1.enQueue(40);
+
+        q1.printQueue();
+        q1.deQueue();
+        q1.printQueue();
+
+        System.out.println(q1.peek());
     }
 }
