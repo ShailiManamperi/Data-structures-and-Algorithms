@@ -6,5 +6,7 @@ public class Main {
 
         q1.enQueue(10);
         q1.enQueue(20);
+
+        q1.printQueue();
     }
 }

@@ -16,6 +16,18 @@ public class queue {
         elemenetdata[++rear] = data;
     }
 
+    public void printQueue(){
+        System.out.print("[ ");
+        if (froent==-1){
+            System.out.println(" ]");
+            return;
+        }
+        for (int i= froent; i<=rear; i++){
+            System.out.print(elemenetdata[i]+" , ");
+        }
+        System.out.println("\b\b]");
+    }
+
 
 
 }
