@@ -10,6 +10,10 @@ public class stack {
     }
 
     public  void push(int data){ //add value to the stack
+        if(top == elementData.length-1){
+            System.out.println("Stack is full");
+            return;
+        }
         elementData[++top] =data;  // frist increment and add the value for the element
     }
 

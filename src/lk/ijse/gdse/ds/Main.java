@@ -2,7 +2,7 @@ package lk.ijse.gdse.ds;
 
 public class Main {
     public static void main(String[] args) {
-        stack stack = new stack(10);
+        stack stack = new stack(5);
 
         stack.push(10);
         stack.push(20);
@@ -31,6 +31,11 @@ public class Main {
         System.out.println(stack.peek()); //400
 
         stack.printstack(); // [ 10 , 20 , 30 , 400 ]
+
+        stack.push(500);
+        stack.printstack(); //[ 10 , 20 , 30 , 400 , 500 ]
+        stack.push(60);  // Stack is full
+
 
     }
 }
