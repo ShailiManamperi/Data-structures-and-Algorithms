@@ -18,4 +18,18 @@ public class LinkedList {
     }
 
 
+
+    public void printList(){
+        System.out.print("[ ");
+        if (head ==null){
+            System.out.println(" ]");
+            return;
+        }
+        Node temp = head;
+        do{
+            System.out.print(temp.data+" , ");
+            temp = temp.next;
+        }while (temp.next != null);
+        System.out.println("\b\b]");
+    }
 }

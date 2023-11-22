@@ -6,6 +6,10 @@ public class Main {
 
         ll.insertAtBegining(10);
         ll.insertAtBegining(20);
+        ll.printList();
+        ll.insertAtBegining(30);
+        ll.printList();
+
 
     }
 }
