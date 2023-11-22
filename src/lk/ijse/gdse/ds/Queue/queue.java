@@ -63,6 +63,11 @@ public class queue {
         }
     }
 
+    public void clear(){
+        froent =-1;
+        rear =-1;
+    }
+
     public int size(){
         return rear - froent +1;
     }

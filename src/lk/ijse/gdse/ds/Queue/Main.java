@@ -31,5 +31,9 @@ public class Main {
         q1.deQueue();
         System.out.println(q1.size());
 
+        q1.clear();
+
+        q1.printQueue();
+
     }
 }
