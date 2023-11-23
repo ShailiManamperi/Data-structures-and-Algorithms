@@ -10,10 +10,6 @@ public class stack {
     }
 
     public  void push(int data){ //add value to the stack
-//        if(top == elementData.length-1){
-//            System.out.println("Stack is full");
-//            return;
-//        }
         if (isFull()){
             System.out.println("After stack full");
             grow();
@@ -27,7 +23,6 @@ public class stack {
 
     public int pop(){   // remove the top value and return that value
         if (isEmpty()) {
-//            throw new RuntimeException("Stack is empty");
             System.out.println("Stack is empty");
             return -1;
         }
